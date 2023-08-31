@@ -5,6 +5,7 @@
 Il s'agit d'un projet collectif consistant à créer une plateforme de vente de meubles.
 
 <br/>
+
 ### Le déroulement
 
 - 2 équipe de 4 personnes.
