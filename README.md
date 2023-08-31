@@ -6,7 +6,7 @@ Il s'agit d'un projet collectif consistant à créer une plateforme de vente de 
 
 <br/>
 
-### :chart_with_downwards_tren Le déroulement
+### :chart_with_downwards_tren: Le déroulement
 
 - 2 équipe de 4 personnes.
 - chaque équipe fait une semaine de back et une semaine de front
