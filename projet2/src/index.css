@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Comfortaa";
+  /* background: rgba(244, 226, 179, 0.889); */
+}
+
+table,
+td,
+th {
+  border: 1px solid;
+}
+
+table {
+  width: 900px;
+}
+
+#modify {
+  border: 1px solid black;
+  background: orange;
+  transition: 0.2s;
+  border-radius: 2px;
+  font-size: 0.8em;
+}
+
+#modify:hover {
+  transform: scale(1.4);
+  background: rgb(238, 203, 100);
+}
+
+#modify:active {
+  transform: scale(0.8);
+  background: green;
+}
+
+#delete {
+  border: 1px solid black;
+  background: red;
+  transition: 0.2s;
+  border-radius: 2px;
+  font-size: 0.8em;
+}
+
+#delete:hover {
+  transform: scale(1.4);
+  background: rgb(238, 203, 100);
+}
+
+#delete:active {
+  transform: scale(0.8);
+  background: green;
+}
+
+#th2 {
+  width: 80px;
+}
+
+#th3 {
+  width: 100px;
+}

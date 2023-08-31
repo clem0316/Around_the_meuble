@@ -1,0 +1,53 @@
+name: atm_deployment
+run-name: ${{ github.actor }} is testing Around_the_meuble
+on: 
+  workflow_dispatch:
+  push:
+    branches:
+      - devBack
+defaults:
+  run:
+    working-directory: around_the_meuble/ATM_back
+jobs:
+  linux_job:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3
+        with: 
+          node-version: 'latest'
+      - name: Shutdown Ubuntu MySQL (SUDO)
+        run: sudo service mysql stop
+      - uses: getong/mariadb-action@v1.1
+        with: 
+          host port: 5173
+          mysql database: 'ATMDB'
+          mysql root password: 'root'
+      - run: echo -e "DB_PASSWORD=root\nDB_USER=root\nDB_HOST=localhost\nDB_NAME=ATMDB" > .env
+      - run: echo "The OS on the runner is $RUNNER_OS" 
+      - run: node -v
+      - run: npm install
+      - run: node server.js 
+  windows_job:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with: 
+          node-version: 'latest'
+      - run: echo "The OS on the runner is $RUNNER_OS" 
+      - run: node -v
+      - run: npm install
+      - run: node server.js 
+  mac_job:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with: 
+          node-version: 'latest'
+      - run: echo "The OS on the runner is $RUNNER_OS"     
+      - run: node -v
+      - run: npm install
+      - run: node server.js 
+
