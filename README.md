@@ -1,6 +1,6 @@
 # Around the meuble
 <br/>
-![cover](img/Capture1.jpg](https://github.com/clem0316/Around_the_meuble/blob/be3c354ece29258ee43d6692161f2026bd9fb9af/Captures/Capture1.jpg)
+![cover](https://github.com/clem0316/Around_the_meuble/blob/be3c354ece29258ee43d6692161f2026bd9fb9af/Captures/Capture1.jpg)
 <br/>
 ### :page_with_curl: Le Projet
 
