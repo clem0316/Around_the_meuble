@@ -1,5 +1,5 @@
 # Around the meuble
-
+![cover](Captures/Capture1.jpg)
 ### :page_with_curl: Le Projet
 
 Il s'agit d'un projet collectif consistant à créer une plateforme de vente de meubles.
